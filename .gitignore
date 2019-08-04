@@ -1,34 +1,12 @@
-# ---> C++
-# Prerequisites
-*.d
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+# easycpp
+!.vscode/.easycpp
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+bin/
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
+.DS_Store
