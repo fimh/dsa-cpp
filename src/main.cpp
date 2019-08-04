@@ -7,5 +7,5 @@ int main()
     cout << "Hello C++ Algorithm!" << endl
          << endl;
 
-    MedianFinderInsertionSort::test();
+    MedianFinderSimpleSorting::test();
 }
