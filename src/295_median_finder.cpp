@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 
+// Time - O(nlogn), Space - O(n)
 class MedianFinderSimpleSorting
 {
     std::vector<int> store;
@@ -36,6 +37,7 @@ public:
     }
 };
 
+// Time - O(n), Space - O(n)
 class MedianFinderInsertionSort
 {
     std::vector<int> store; // resize-able container
