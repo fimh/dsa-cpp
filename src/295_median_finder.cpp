@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
 class MedianFinderSimpleSorting
 {
-    vector<int> store;
+    std::vector<int> store;
 
 public:
     // Adds a number into the data structure.
@@ -24,7 +23,7 @@ public:
 
     static void test()
     {
-        cout << "Q295 - find median from data stream (simple sorting)" << endl;
+        std::cout << "Q295 - find median from data stream (simple sorting)" << std::endl;
 
         MedianFinderSimpleSorting finder = MedianFinderSimpleSorting();
         finder.addNum(5);
@@ -33,13 +32,13 @@ public:
         finder.addNum(39);
         finder.addNum(20);
 
-        cout << finder.findMedian() << endl;
+        std::cout << finder.findMedian() << std::endl;
     }
 };
 
 class MedianFinderInsertionSort
 {
-    vector<int> store; // resize-able container
+    std::vector<int> store; // resize-able container
 
 public:
     // Adds a number into the data structure.
@@ -60,7 +59,7 @@ public:
 
     static void test()
     {
-        cout << "Q295 - find median from data stream (insertion sort)" << endl;
+        std::cout << "Q295 - find median from data stream (insertion sort)" << std::endl;
 
         MedianFinderInsertionSort finder = MedianFinderInsertionSort();
         finder.addNum(5);
@@ -69,6 +68,6 @@ public:
         finder.addNum(39);
         finder.addNum(20);
 
-        cout << finder.findMedian() << endl;
+        std::cout << finder.findMedian() << std::endl;
     }
 };
