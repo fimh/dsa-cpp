@@ -6,5 +6,5 @@ int main()
     std::cout << "Hello C++ Algorithm!" << std::endl
               << std::endl;
 
-    MedianFinderSimpleSorting::test();
+    MedianFinderTwoHeaps::test();
 }
