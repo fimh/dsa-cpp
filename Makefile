@@ -1,5 +1,5 @@
 CXX		  := clang++
-CXX_FLAGS := -Wall -Wextra -std=c++17 -g
+CXX_FLAGS := -Wall -Wextra -std=c++11 -g # change to c++11 accroding to google's c++ style guide
 
 BIN		:= bin
 SRC		:= src
