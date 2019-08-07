@@ -3,6 +3,9 @@
 #include <queue>
 #include <set>
 
+// Approach 1 - Simple Sorting
+// Store the numbers in a resizable container. Every time you need to output the median,
+// sort the container and output the median.
 // Time - O(nlogn), Space - O(n)
 class MedianFinderSimpleSorting
 {
@@ -39,6 +42,9 @@ public:
     }
 };
 
+// Approach 2 - Insertion Sort
+// Keeping our input container always sorted (i.e. maintaining the sorted nature of the container
+// as an invariant) via the idea of insertion sort.
 // Time - O(n), Space - O(n)
 class MedianFinderInsertionSort
 {
@@ -51,6 +57,9 @@ public:
         if (store.empty())
             store.push_back(num);
         else
+            // http://www.cplusplus.com/reference/algorithm/lower_bound/?kw=lower_bound
+            // equivalent to bisect.bisect_left() in python
+            // https://docs.python.org/3.6/library/bisect.html
             store.insert(lower_bound(store.begin(), store.end(), num), num); // binary search and insertion combined
     }
 
@@ -76,6 +85,10 @@ public:
     }
 };
 
+// Approach 3 - Two Heaps
+// Maintain two heaps.
+// A max-heap to store the smaller half of the input numbers
+// A min-heap to store the larger half of the input numbers
 // Time - O(logn), Space - O(n)
 class MedianFinderTwoHeaps
 {
